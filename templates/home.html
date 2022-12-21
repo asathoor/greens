@@ -1,0 +1,103 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","lock":{"move":true,"remove":true}} /-->
+
+<!-- wp:block {"ref":10999} /-->
+
+<!-- wp:columns {"className":"petjReverse"} -->
+<div class="wp-block-columns petjReverse"><!-- wp:column {"width":"66.66%"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:group {"tagName":"main","lock":{"move":false,"remove":false},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:spacer {"height":"165px"} -->
+<div style="height:165px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:query {"queryId":0,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"list","columns":3},"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template -->
+<!-- wp:post-featured-image {"isLink":true,"width":"","height":"23vh","align":"center","style":{"color":{"duotone":["#1900d8","#ffa96b"]},"border":{"radius":{"topRight":"80px","topLeft":"80px"}}}} /-->
+
+<!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-excerpt /-->
+
+<!-- wp:post-date {"isLink":true} /-->
+
+<!-- wp:spacer {"height":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dspacing\u002d\u002d40)"} -->
+<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous {"label":"Newer Posts"} /-->
+
+<!-- wp:query-pagination-next {"label":"Older Posts"} /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query -->
+
+<!-- wp:spacer {"height":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dspacing\u002d\u002d60)"} -->
+<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></main>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"33.33%"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:block {"ref":10367} /-->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:separator {"align":"wide"} -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:pullquote {"textAlign":"center","style":{"border":{"radius":"35px","width":"0px","style":"none"},"typography":{"fontStyle":"normal","fontWeight":"500","lineHeight":1.600000000000000088817841970012523233890533447265625}},"backgroundColor":"primary","textColor":"contrast","fontSize":"medium","fontFamily":"source-serif-pro"} -->
+<figure class="wp-block-pullquote has-text-align-center has-contrast-color has-primary-background-color has-text-color has-background has-source-serif-pro-font-family has-medium-font-size" id="myQuote" style="border-style:none;border-width:0px;border-radius:35px;font-style:normal;font-weight:500;line-height:1.6"><blockquote><p>Abracadabra</p><cite>Inspirational Quotes</cite></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:html -->
+<script>
+// Let there be an element with the id myQuote in the html
+// Quotes
+let quotes = [
+"Oh yeah! Oh yeah! Oh yeah! <br>(John Lennon)",
+"A truth that's told with bad intent beats all the lies you can invent.<br>(W. Blake)",
+"What is now proved was once only imagined.<br>(W. Blake)",
+"Be yourself; everyone else is already taken.<br>(Oscar Wilde)",
+"So many books, so little time.<br>(Frank Zappa)",
+"A room without books is like a body without a soul. <br>(Marcus Tullius Cicero)",
+"Every man and every woman is a star.<br>(Aleister Crowley)",
+"I have not failed. I just found 10.000 ways that won't work.<br>(Thomas A. Edison)",
+"The more I see of men the better I like my dog.<br>(Frederic the Great)",
+"Few praise the ocean while drowning.<br>(Palle Lauring)",
+"If you ask what jazz is, you'll never know.<br>(Louis Armstrong)",
+"A thing worth having is a thing worth cheating for.<br>(W.C. Fields)",
+"It ain't a fit night out for man or beast.<br>(W.C. Fields)",
+"If you can’t dazzle them with brilliance, baffle them with bullshit.<br>(W.C. Fields)",
+"Yes, you can - if you do everything as if it were the last thing you were doing in your life, and stop being aimless, stop letting your emotions override what your mind tells you, stop being hypocritical, self-centered, irritable.<br>(Marcus Aurelius)",
+"Do what thou willt.<br>(Aleister Crowley)",
+"Begin. To begin is half the work, let half still remain; again begin this, and thou wilt have finished.<br>(Marcus Aurelius)",
+"Come Fairies, take me out of this dull world, for I would ride with you upon the wind and dance upon the mountains like a flame!<br>(W.B. Yeats)",
+"By logic and reason we die hourly; by imagination we live.<br>(W.B. Yeats)",
+"Think like a wise man but communicate in the language of the people.<br>(W.B. Yeats)",
+"The only enemy of innocence and beauty is time.<br>(W.B. Yeats)",
+"If you think good design is expensive, you should look at the cost of bad design.<br>(Dr. Ralf Speth)",
+"If we want users to like our software, we should design it to behave like a likeable person: respectful, generous and helpful.<br>Alan Cooper",
+"People ignore design that ignores people.<br>(Frank Chimero, Designer)",
+"Have a look at line 237. A semicolon is missing.<br>(Per Thykjaer Jensen)",
+"I want to be a machine.<br>(Andy Warhol)",
+"Shall I compare the to a summers day<br>thou art more temperate.<br>(Shakespeare)",
+"What a terrible era in which idiots govern the blind.<br>(Shakespeare)",
+"Hope is a good breakfast, but it is a bad supper.<br>(Francis Bacon)",
+"All colours will agree in the dark.<br>(Francis Bacon)"
+]
+// get a random quote in #myQuote
+document.getElementById('myQuote').innerHTML = quotes[Math.floor(Math.random()*quotes.length)]
+
+</script>
+<!-- /wp:html -->
+
+<!-- wp:separator {"align":"wide"} -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:page-list /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","lock":{"move":true,"remove":true}} /-->
